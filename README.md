@@ -19,11 +19,13 @@ THis will make use of conditional rendering we've talked about a couple of times
 - Add a `featureQuote` method in the `Quote` component
 - Give the `Quote` component state
 
-### Next Steps
+## 🚀 LAB!
+
+Walk through yourself what I just did in class.
+
+# Lifting State
 
 This works well enough if we want to feature multiple quotes, but what if we just want one featured quote at a time? Could we do this if we had state in each child component that needed to be checked?
-
-## Lifting State
 
 This use case and similar ones is why we would want to lift state.
 
@@ -70,7 +72,7 @@ We have the method call `onClick` in our child component and the method itself i
 
 Well, not only can we pass props like numbers and text, but also we can pass functions and methods along. And those functions are still bound to the context of their original components. So, since we've bound `featureQuote` in `App.js`, `this.setState` refers to the state in `App.js`.
 
-In our example, the prop `quote` is passing information down to the children, while the prop `featureQuote` is allowing us to use our interaction with that component to set the data in the parent. So we have to pass `featureQuote` down through `QuoteList` to `Quote` to make good use of it.
+In our example, the prop `quote` is passing information down to the children, while the prop `featureQuote` is allowing us to use our interaction with that component to set the data in the parent. So we have to pass `featureQuote` down through `QuoteList` to `Quote` to make use of it.
 
 ##  🚀 LAB!!
 
