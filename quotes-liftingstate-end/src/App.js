@@ -22,8 +22,9 @@ class App extends Component {
     fetch('https://ada-api.herokuapp.com/api/quotes')
     .then(res => res.json())
     .then(res => {
+      console.log(res);
       this.setState({
-        apiData: res.data.quotesData,
+        apiData: res.quotesData,
         apiDataLoaded: true,
       });
     });

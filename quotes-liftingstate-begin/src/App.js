@@ -21,7 +21,7 @@ class App extends Component {
     .then(res => res.json())
     .then(res => {
       this.setState({
-        apiData: res.data.quotesData,
+        apiData: res.quotesData,
         apiDataLoaded: true,
       });
     });

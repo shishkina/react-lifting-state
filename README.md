@@ -27,6 +27,22 @@ Walk through yourself what I just did in class.
 
 This works well enough if we want to feature multiple quotes, but what if we just want one featured quote at a time? Could we do this if we had state in each child component that needed to be checked?
 
+So far, our dataflow has looked like this:
+
+![unidirectional](https://cdn-images-1.medium.com/max/1600/1*O3-jbieSsxcQFkrTLp-1zw.gif)
+
+A state change happens, and that state change is modified in its child components. Or, a component has its own state that can be modified and it will reflect its own changes.
+
+However! What if a child component's changes needed to affect other components on the page, like this?
+
+![lifting-1](https://cdn-images-1.medium.com/max/1600/1*DrxF4q1jNkiEKKm1EBAgiQ.gif)
+
+Or, even more extremely, like this:
+
+![lifting-2](https://cdn-images-1.medium.com/max/1600/1*9PS1G3FYqBbChVG0R1eh7Q.gif)
+
+_Gifs from [this article](https://medium.com/dailyjs/when-do-i-know-im-ready-for-redux-f34da253c85f)_
+
 This use case and similar ones is why we would want to lift state.
 
 > Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor. [From the React docs](https://facebook.github.io/react/docs/lifting-state-up.html)
@@ -80,9 +96,9 @@ Work on getting the `quotes-liftingstate-begin` app to this point.
 
 # Another example
 
-- Walkthrough pokémon app
+- Walk through weather app!
 
 ##  🚀 LAB!!
 
-If your Pokémon homework didn't work, go back and apply this new concept to it. Otherwise, refactor it so that it follows best practices.
+If your weather homework didn't work, go back and apply this new concept to it. Otherwise, refactor it so that it follows best practices.
 
