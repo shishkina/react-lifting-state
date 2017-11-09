@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>Made by WDI DeLorean</footer>
+    <footer>Made by WDI Thundercats</footer>
   )
 }
 

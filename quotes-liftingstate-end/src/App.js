@@ -19,7 +19,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://ada-api.herokuapp.com/api/quotes').then(res => {
+    fetch('https://ada-api.herokuapp.com/api/quotes')
+    .then(res => res.json())
+    .then(res => {
       this.setState({
         apiData: res.data.quotesData,
         apiDataLoaded: true,

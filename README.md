@@ -6,7 +6,7 @@
 - Follow best practices by lifting state to the main `App` component
 - Pass methods down between components to adjust state in the main `App` component
 
-### Before we dive into lifting state, let's add a feature to our quotes app so far.
+### Before we dive into lifting state, let's add a feature to our quotes app.
 
 Let's say we want to be able to "feature" quotes -- display our favorite ones differently.
 
@@ -76,7 +76,7 @@ In our example, the prop `quote` is passing information down to the children, wh
 
 ##  🚀 LAB!!
 
-Work on getting the `quotes-liftngstate-begin` app to this point.
+Work on getting the `quotes-liftingstate-begin` app to this point.
 
 # Another example
 
