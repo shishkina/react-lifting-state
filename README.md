@@ -1,10 +1,25 @@
 # Lifting State
 
+#### The Return of the Quotes 😱
+
 ### Learning Objectives
 
+- Review React concepts we have learned so far
 - Change components dynamically based on the `App.js` state
 - Follow best practices by lifting state to the main `App` component
 - Pass methods down between components to adjust state in the main `App` component
+
+
+### First things first!
+
+Let's create quotes app from scratch! But first, You need to diagram!
+
+> 🚀 LAB: With a partner, using whiteboard and colorful markers diagram ALL the components our app will have. Think: header, footer, quote? What else? Where the state would live, where you would make the api call? what props would you pass and where?
+
+### `create-react-app quotes-lifting-state`
+
+> 🚀 LAB: Working with a partner, utilizing "pair programming" techniques, build out the components you diagrammed.
+
 
 ### Before we dive into lifting state, let's add a feature to our quotes app.
 
@@ -14,7 +29,7 @@ Let's say we want to be able to "feature" quotes -- display our favorite ones di
     - the quote becomes featured
     - and changes its background to tan.
 
-THis will make use of conditional rendering we've talked about a couple of times. We'll also need to do a couple of things:
+This will make use of conditional rendering we've talked about a couple of times. We'll also need to do a couple of things:
 
 - Add a `featureQuote` method in the `Quote` component
 - Give the `Quote` component state
@@ -53,9 +68,9 @@ If we only want to feature one quote, we'd need to do a couple of things:
 - Move `featureQuote` into `App.js`
 - Set a property `featured` in the state of `App.js` that has the featured quote's ID
 - Pass down `featured` and `featureQuote` through the `QuoteList` component to each `Quote` component
-- Adjust `onClick={this.setFeature}` so that it accepts an argument of the quote's ID
+- Adjust `onClick={this.featureQuote}` so that it accepts an argument of the quote's ID
 
-We'll walk through this together, and there's a completed version in `quotes-liftingstate-final`.
+We'll walk through this together, and there's a completed version in `quotes-liftingstate-end`.
 
 
 ### Step 1: Altering the `Quote` component.
@@ -93,12 +108,3 @@ In our example, the prop `quote` is passing information down to the children, wh
 ##  🚀 LAB!!
 
 Work on getting the `quotes-liftingstate-begin` app to this point.
-
-# Another example
-
-- Walk through weather app!
-
-##  🚀 LAB!!
-
-If your weather homework didn't work, go back and apply this new concept to it. Otherwise, refactor it so that it follows best practices.
-
