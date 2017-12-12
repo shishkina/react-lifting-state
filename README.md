@@ -38,6 +38,8 @@ This will make use of conditional rendering we've talked about a couple of times
 
 Walk through yourself what I just did in class.
 
+> NOTE! If you get stuck, there is a branch `quotes-lifting-state-begin` take a look to get yourself up to speed 🤓
+
 # Lifting State
 
 This works well enough if we want to feature multiple quotes, but what if we just want one featured quote at a time? Could we do this if we had state in each child component that needed to be checked?
